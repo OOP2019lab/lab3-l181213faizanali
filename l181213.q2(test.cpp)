@@ -1,0 +1,28 @@
+#include<iostream>
+#include"l181213.q2(githubuser.h)"
+using namespace std;
+int main()
+{
+	int lgth,width,area;
+	Rectangle R1;
+	R1.getlength();
+	R1.getwidth();
+	
+	
+	cout<<"enter length";
+	cin>>lgth;
+	cout<<"enter width";
+	cin>>width;
+	R1.setlength(lgth);
+	R1.setwidth(width);
+    area=R1.getarea();
+	cout<<"Area"<<area;
+	cout<<endl;
+	cout<<"////before rotation////";
+	R1.draw();
+	cout<<"///after rotatiosn//";
+	R1.rotaterectangle();
+	R1.draw();
+	system("pause");
+	return 0;
+}

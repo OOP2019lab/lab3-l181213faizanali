@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+#include<string>
+
+class Rectangle
+{
+private:
+	int leng;
+    int width;
+public:
+	int getlength();
+	int getwidth();
+    void setlength(int length);
+	void setwidth(int wid);
+	int getarea();
+	void rotaterectangle();
+	void draw();
+};

@@ -1,0 +1,56 @@
+#include<iostream>
+#include"l181213.q2(githubuser.h)"
+using namespace std;
+int Rectangle::getlength()
+{
+	
+return leng;
+}
+int Rectangle::getwidth()
+{
+	return width;
+}
+void Rectangle::setlength(int length)
+{
+	if(length>=0)
+	{
+	leng=length;
+	}
+	else
+	leng=0;
+}
+void Rectangle::setwidth(int wid)
+{
+	if(wid>=0)
+	{
+	width=wid;
+	}
+	else
+		cout<<"enter positive width";
+
+}
+int Rectangle::getarea()
+{
+	return leng*width;
+	
+}
+void Rectangle::rotaterectangle()
+{
+int temp=0;
+temp=leng;
+leng=width;
+width=temp;
+
+}
+void Rectangle::draw()
+{
+	cout<<endl;
+	for(int i=0; i<leng;i++)
+	{
+		for(int j=0;j<width;j++)
+		{
+			cout<<"*"<<'\t';
+		}
+		cout<<endl;
+	}
+}
